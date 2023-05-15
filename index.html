@@ -8,7 +8,112 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="assets" href="/assets/logo.png" />
   </head>
-  <header></header>
-  <body></body>
+  <header>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#competences">Competences</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#cv">Curriculum vitae</a>
+      <a href="#apropos">A propos</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="raccourci">
+      <a href="https://www.facebook.com/alexis.rouches/"
+        ><img
+          class="logoracc"
+          src="/assets/facebook.png"
+          alt="logo facebook"
+          width="50px"
+      /></a>
+      <a href="https://www.linkedin.com/in/alexisrouches/"
+        ><img
+          class="logoracc"
+          src="/assets/linkedin.png"
+          alt="logo linkedin"
+          width="50px"
+      /></a>
+      <a href="https://github.com/Doctorwho07"
+        ><img
+          class="logoracc"
+          src="/assets/github.png"
+          alt="logo github"
+          width="50px"
+      /></a>
+      <a href="instagram.com"
+        ><img
+          class="logoracc"
+          src="/assets/insta.png"
+          alt="logo instagram"
+          width="50px"
+      /></a>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <div class="page" id="home">
+        <div class="background">
+          <div class="title"><h1>Alternant informatique</h1></div>
+          <div class="subtitleHome">
+            <h2>
+              Developpeur web | application | cybersécurité | infrastructure
+              réseau
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="competences">
+        <div class="title"><h2>Mes compétences</h2></div>
+        <div class="subtitleCompetence"><h4>Des compétences variées</h4></div>
+      </div>
+      <div class="page" id="portfolio">
+        <div class="title"><h2>Mes Projets</h2></div>
+        <div class="subtitlePortfolio">
+          <h4>Mes réalisations les plus pertinantes</h4>
+          <div class="containerb">
+            <div class="card-container" id="Card"></div>
+            <div class="modal" id="modal-detail-projet"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="cv"></div>
+      <div class="page" id="apropos">
+        <div class="title"><h2>A propos de moi</h2></div>
+        <div class="subtitleApropos"><h4>Un peu plus sur moi</h4></div>
+      </div>
+      <div class="page" id="contact">
+        <div class="title"><h2>Me contacter</h2></div>
+        <div class="subtileContact"><h4>N'hésitez pas à me contacter</h4></div>
+        <div class="info">
+          <div class="line">
+            <img src="/assets/tel.png" alt="icon_tel" width="50px" />
+            <div class="column">
+              <h4>Téléphone :</h4>
+              <a href="tel:+33778221121">0778221121</a>
+            </div>
+          </div>
+          <br />
+          <div class="line">
+            <img src="/assets/mail.png" alt="icon_mail" width="50px" />
+            <div class="column">
+              <h4>Adresse mail :</h4>
+              <a href="mailto:alexis.rouches@icloud.com"
+                >alexis.rouches@icloud.com</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="line">
+            <img src="/assets/adress.png" alt="icon_adress" width="50px" />
+            <div class="column">
+              <h4>Adresse :</h4>
+              <p>Reventin-Vaugris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="const.js"></script>
+    <script src="/javascript.js"></script>
+  </body>
   <footer>Alexis ROUCHES - Copyright ©</footer>
 </html>
