@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #2979ff;
+  letter-spacing: 1px;
+  --gold: rgb(115, 106, 35);
+  --red: rgb(93, 24, 18);
+  --orange: rgb(115, 79, 39);
+  --grey: rgb(122, 122, 122);
+  --purple: rgb(112, 79, 116);
+  --dark-blue: rgb(19, 19, 65);
+  --black: rgb(0, 0, 0);
+  --light-blue: rgb(76, 126, 125);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+br {
+  background-color: white;
+  color: white;
+  height: 2px;
+}
+a {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+header {
+  background-color: #1f1f1f;
+  width: 100%;
+  position: fixed;
+  height: 7vh;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  z-index: 100;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #1f1f1fd2;
+  width: 100%;
+  height: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #1f1f1f;
+}
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.subtitlePortfolio {
+  height: 100%;
+  margin: 1%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.raccourci {
+  background-color: #2978ff62;
+  display: flex;
+  position: absolute;
+  top: 7vh;
+  left: 3vw;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+.logoracc {
+  margin: 10px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#home {
+  background-image: url(/assets/home.png);
+  margin-top: 7vh;
+  opacity: 0.7;
+  height: 97vh;
+  z-index: 0;
+}
+
+.background {
+  background-color: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#modal-detail-projet {
+  display: none;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  cursor: pointer;
+  margin: 2%;
+}
+
+.modal-container {
+  position: relative;
+}
+
+.modal.description .text {
+  display: block;
+}
+
+.modal.description .text h1 {
+  margin: 2%;
+}
+
+.modal.description .text h2 {
+  margin: 2%;
+}
+
+.modal.description .text p {
+  margin: 2%;
+}
+
+.modal.photo {
+  display: block;
+  position: absolute;
+  background-color: rgb(233, 233, 233);
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.modal.close {
+  display: flex;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2979ff;
+}
+
+.modal.close p {
+  font-size: small;
+  color: #000000;
+  text-decoration: underline;
+}
+.modal.close p:hover {
+  transition: 1s;
+  color: #2979ff;
+}
+
+#modal-close {
+  cursor: pointer;
+}
+
+.containerb {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+/* smartphone */
+@media screen and (max-width: 767px) {
+}
+
+/* tablet */
+@media screen and (min-width: 767px) and (max-width: 1023) {
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+}
+
+#contact {
+  margin-bottom: 10px;
+}
+
+#contact h2 {
+  font-size: 28px;
+}
+
+#contact .subtileContact {
+  margin-bottom: 20px;
+}
+
+#contact .subtileContact h4 {
+  font-size: 18px;
+}
+
+#contact h4 {
+  font-size: 20px;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#contact p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.line {
+  display: flex;
+}
+.line img {
+  margin-right: 5%;
+}
+
+.info {
+  text-align: start;
+}
