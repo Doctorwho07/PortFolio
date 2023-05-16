@@ -27,7 +27,7 @@ const Projet = [
     description:
       "Le boxxle est un jeu d'arcade où le but est de déplacer des boites pour les mettre au bon endroit et valider le niveau",
     url: [""],
-    screenShot: ["./assets/projets_screenshot/boxxle.png"],
+    screenShot: ["/assets/projets_screenshot/boxxle.png"],
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const Projet = [
     brief: "Jeu du pendu web",
     description:
       "Le jeu reprend le principe du pendu et peut etre joué dans la console de son terminal",
-    url: [""],
+    url: ["https://github.com/Doctorwho07/Hangman-web"],
     screenShot: ["./assets/projets_screenshot/hangman-web.png"],
   },
   {
@@ -82,7 +82,7 @@ const Projet = [
     année: "2023",
     brief: "Calculatrice",
     description: "Petit exercice calcul mental",
-    url: [""],
+    url: ["https://github.com/JAVA-ROUCHES-ALEXIS/TP/tree/main/TP%201"],
     screenShot: ["./assets/projets_screenshot/sortable.png"],
   },
   {
