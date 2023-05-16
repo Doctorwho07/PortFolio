@@ -97,3 +97,15 @@ function afficheModalProjet(projet) {
     "</div>" +
     "</div>";
 }
+
+function openPDF() {
+  var pdfURL = "/assets/CV_Alexis_ROUCHES.pdf";
+  window.open(pdfURL, "_blank");
+  var link = document.createElement("a");
+  link.href = pdfURL;
+  link.download = "cv.pdf";
+  link.style.display = "none";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}

@@ -51,15 +51,14 @@
   <body>
     <div class="container">
       <div class="page" id="home">
-        <div class="background">
-          <div class="title"><h1>Alternant informatique</h1></div>
-          <div class="subtitleHome">
-            <h2>
-              Developpeur web | application | cybersécurité | infrastructure
-              réseau
-            </h2>
-          </div>
+        <div class="title"><h1>Alternant informatique</h1></div>
+        <div class="subtitleHome">
+          <h2>
+            Developpeur web | application | cybersécurité | infrastructure
+            réseau
+          </h2>
         </div>
+        <div class="background"></div>
       </div>
       <div class="page" id="competences">
         <div class="title"><h2>Mes compétences</h2></div>
@@ -75,7 +74,14 @@
           </div>
         </div>
       </div>
-      <div class="page" id="cv"></div>
+      <div class="page" id="cv">
+        <div class="title"><h2>Curriculum Vitae</h2></div>
+        <div class="subtitleApropos">
+          <h4>Visualisable et telechargeable directement</h4>
+        </div>
+        <img id="pdf" src="/assets/CV_Alexis_ROUCHES.pdf" alt="cv_pdf" />
+        <button onclick="openPDF()">Voir le CV</button>
+      </div>
       <div class="page" id="apropos">
         <div class="title"><h2>A propos de moi</h2></div>
         <div class="subtitleApropos"><h4>Un peu plus sur moi</h4></div>

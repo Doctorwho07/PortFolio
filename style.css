@@ -76,7 +76,7 @@ footer {
   background-color: #2978ff62;
   display: flex;
   position: absolute;
-  top: 7vh;
+  top: 8vh;
   left: 3vw;
   height: fit-content;
   width: fit-content;
@@ -97,26 +97,28 @@ footer {
 }
 
 #home {
-  background-image: url(/assets/home.png);
-  margin-top: 7vh;
-  opacity: 0.7;
-  height: 97vh;
-  z-index: 0;
+  height: 93vh;
+  padding-top: 7vh;
 }
 
 .background {
-  background-color: #000;
-  opacity: 0.7;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  background-image: url(/assets/home.png);
+  width: 100vw;
+  height: 93vh;
+  position: absolute;
+  top: 7vh;
+  opacity: 0.4;
+  z-index: 0;
 }
-
+.title h1 {
+  font-size: 48px;
+  font-weight: bold;
+  z-index: 1;
+}
+.subtitleHome {
+  font-size: 24px;
+  z-index: 2;
+}
 .title {
   display: flex;
   justify-content: center;
@@ -212,11 +214,19 @@ footer {
 }
 
 #contact {
-  margin-bottom: 10px;
+  margin: 20%;
+}
+#cv {
+  padding-top: 100px;
 }
 
+#apropos {
+  padding-top: 150px;
+}
 #contact h2 {
+  width: 100%;
   font-size: 28px;
+  margin: 2%;
 }
 
 #contact .subtileContact {
@@ -251,4 +261,23 @@ footer {
 
 .info {
   text-align: start;
+}
+
+#cv button {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cv button:hover {
+  background-color: lightgray;
+}
+#pdf {
+  margin: 2%;
+  border-radius: 25px;
 }
