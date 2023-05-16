@@ -27,7 +27,7 @@ const Projet = [
     description:
       "Le boxxle est un jeu d'arcade où le but est de déplacer des boites pour les mettre au bon endroit et valider le niveau",
     url: [""],
-    screenShot: ["/assets/projets_screenshot/boxxle.png"],
+    screenShot: ["./assets/projets_screenshot/boxxle.png"],
   },
   {
     id: 4,
