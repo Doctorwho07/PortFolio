@@ -102,7 +102,7 @@ footer {
 }
 
 .background {
-  background-image: url(/assets/home.png);
+  background-image: url(./assets/home.png);
   width: 100vw;
   height: 93vh;
   position: absolute;
