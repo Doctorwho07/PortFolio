@@ -50,6 +50,7 @@ footer {
   text-align: center;
   align-items: center;
   height: 5vh;
+  width: 100%;
   background-color: #1f1f1f;
 }
 .navbar {
@@ -140,6 +141,9 @@ footer {
 .card {
   cursor: pointer;
   margin: 2%;
+  padding: 2%;
+  border-radius: 25px;
+  height: fit-content;
 }
 
 .modal-container {
@@ -172,15 +176,12 @@ footer {
 }
 
 .modal.close {
-  display: flex;
+  top: 0;
   position: absolute;
-  font-size: 30px;
-  font-weight: 700;
-  color: #2979ff;
 }
 
 .modal.close p {
-  font-size: small;
+  font-size: 25px;
   color: #000000;
   text-decoration: underline;
 }
@@ -191,6 +192,9 @@ footer {
 
 #modal-close {
   cursor: pointer;
+}
+.lien-details.projet {
+  margin: 5%;
 }
 
 .containerb {
@@ -263,7 +267,7 @@ footer {
   text-align: start;
 }
 
-#cv button {
+button {
   background-color: white;
   border-radius: 25px;
   color: black;
@@ -274,10 +278,22 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-#cv button:hover {
+button:hover {
   background-color: lightgray;
+  color: #2979ff;
 }
 #pdf {
   margin: 2%;
+  border-radius: 25px;
+}
+
+#pdf:hover {
+  background-color: lightgray;
+}
+
+.imgproj {
+  width: 45vw;
+  height: 30vh;
+  object-fit: cover;
   border-radius: 25px;
 }

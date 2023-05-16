@@ -7,7 +7,7 @@ const Projet = [
     description:
       "Le site vitrine permets de presenter toutes les figurines réaliser depuis la création du projet et jusqu'a sa fin. Son langage primaire permet a n'importe qui de faire des rajouts, des modifications voir meme des améliorations",
     url: "https://ydetailedfigures.ylab.fr/index.html",
-    screenShot: ["/assets/images/screenShotYdays"],
+    screenShot: ["./assets/projets_screenshot/ydays.png"],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const Projet = [
     description:
       "Ce tableau récupère une api, qui est un lien vers une base de donnée où sont stockés tous les heros. Le but de se projet est de pouvoir decouvrir et utiliser les api et les fitres pour classer et ranger un tableau",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/sortable.png"],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const Projet = [
     description:
       "Le boxxle est un jeu d'arcade où le but est de déplacer des boites pour les mettre au bon endroit et valider le niveau",
     url: [""],
-    screenShot: ["assets/images/screenShotBoxxle"],
+    screenShot: ["./assets/projets_screenshot/boxxle.png"],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const Projet = [
     description:
       "Le jeu reprend le principe du pendu et peut etre joué dans la console de son terminal",
     url: [""],
-    screenShot: ["assets/images/screenShotHangMan"],
+    screenShot: ["./assets/projets_screenshot/hangman-classique.png"],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const Projet = [
     description:
       "Le jeu reprend le principe du pendu et peut etre joué dans la console de son terminal",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/hangman-web.png"],
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const Projet = [
     brief: "Receuil et découverte d'artiste",
     description: "Le projet groupie tracker",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/groupie-tracker.png"],
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ const Projet = [
     brief: "Quad drawing",
     description: "Le raid du week-end",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/quad.png"],
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ const Projet = [
     brief: "Word search solver",
     description: "Le raid du week-end",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/word-search-solver.png"],
   },
   {
     id: 9,
@@ -83,7 +83,7 @@ const Projet = [
     brief: "Calculatrice",
     description: "Petit exercice calcul mental",
     url: [""],
-    screenShot: ["assets/images/screenShotSotable"],
+    screenShot: ["./assets/projets_screenshot/sortable.png"],
   },
   {
     id: 10,
@@ -92,6 +92,6 @@ const Projet = [
     brief: "Clicker",
     description: "Petit jeu dde clicker",
     url: [""],
-    screenShot: [""],
+    screenShot: ["./assets/projets_screenshot/cookie.png"],
   },
 ];

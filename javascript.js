@@ -11,7 +11,7 @@ window.addEventListener("focus", () => {
 //------fonction card------//
 const data = Projet;
 const cardContainer = document.querySelector(".card-container");
-const urlImageDefaut = "/assets/visuel-a-venir.jpg";
+const urlImageDefaut = "./assets/visuel-a-venir.jpg";
 // Créer une carte pour chaque objet de données
 data.forEach((item) => {
   const card = document.createElement("div");
@@ -19,7 +19,7 @@ data.forEach((item) => {
   card.style.backgroundColor = "#D9D9D9";
   card.style.textAlign = "center";
   card.style.width = "300px";
-  card.innerHTML = `<h2>${item.nom}</h2><p>${item.année}</p>`;
+  card.innerHTML = `<img src="${item.screenShot}" width="300px"><h2>${item.nom}</h2><p>${item.année}</p>`;
   cardContainer.appendChild(card);
 });
 
@@ -91,7 +91,7 @@ function afficheModalProjet(projet) {
     "<p>Close</p> " +
     "</div>" +
     '<div class="modal photo">' +
-    '<img src="' +
+    '<img class="imgproj" src="' +
     projet.screenShot +
     '">' +
     "</div>" +
