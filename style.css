@@ -128,8 +128,30 @@ footer {
 
 #modal-detail-projet {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
 }
 
+#competences {
+  padding-top: 50px;
+}
+#portfolio {
+  padding-top: 50px;
+}
+.separator {
+  margin: 5%;
+}
+h3 {
+  margin: 2%;
+}
 .card-container {
   width: 100%;
   height: 100%;
@@ -144,10 +166,6 @@ footer {
   padding: 2%;
   border-radius: 25px;
   height: fit-content;
-}
-
-.modal-container {
-  position: relative;
 }
 
 .modal.description .text {
@@ -166,15 +184,6 @@ footer {
   margin: 2%;
 }
 
-.modal.photo {
-  display: block;
-  position: absolute;
-  background-color: rgb(233, 233, 233);
-  grid-column: 2 / 5;
-  grid-row: 2 / 4;
-  box-shadow: 10px 10px 10px #000000;
-}
-
 .modal.close {
   top: 0;
   position: absolute;
@@ -182,7 +191,7 @@ footer {
 
 .modal.close p {
   font-size: 25px;
-  color: #000000;
+  color: #ffffff;
   text-decoration: underline;
 }
 .modal.close p:hover {
@@ -205,6 +214,7 @@ footer {
   width: 100%;
   height: 100%;
 }
+
 /* smartphone */
 @media screen and (max-width: 767px) {
 }
@@ -220,12 +230,13 @@ footer {
 #contact {
   margin: 20%;
 }
+
 #cv {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #apropos {
-  padding-top: 150px;
+  padding-top: 50px;
 }
 #contact h2 {
   width: 100%;

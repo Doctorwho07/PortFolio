@@ -62,8 +62,6 @@ function openModal(nomProjet) {
 }
 
 function afficheModalProjet(projet) {
-  console.log(projet);
-
   const modalField = document.getElementById("modal-detail-projet");
   console.log("affiche modal projet" + projet);
 
@@ -84,16 +82,16 @@ function afficheModalProjet(projet) {
     projet.url +
     "'\">" +
     "Voir le projet en détails" +
+    '<div class="modal photo">' +
+    '<img class="imgproj" src="' +
+    projet.screenShot +
+    '">' +
     "</button>" +
     "</div>" +
     "</div>" +
     '<div class="modal close" id="modal-close"> ' +
     "<p>Close</p> " +
     "</div>" +
-    '<div class="modal photo">' +
-    '<img class="imgproj" src="' +
-    projet.screenShot +
-    '">' +
     "</div>" +
     "</div>";
 }
