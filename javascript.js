@@ -90,14 +90,14 @@ function afficheModalProjet(projet) {
     "</div>" +
     "</div>" +
     '<div class="modal close" id="modal-close"> ' +
-    "<p>Close</p> " +
+    "<p>X</p> " +
     "</div>" +
     "</div>" +
     "</div>";
 }
 
 function openPDF() {
-  var pdfURL = "/assets/CV_Alexis_ROUCHES.pdf";
+  var pdfURL = "./assets/CV_Alexis_ROUCHES.pdf";
   window.open(pdfURL, "_blank");
   var link = document.createElement("a");
   link.href = pdfURL;

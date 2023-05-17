@@ -55,7 +55,7 @@ const Projet = [
     année: "2023",
     brief: "Receuil et découverte d'artiste",
     description: "Le projet groupie tracker",
-    url: [""],
+    url: ["https://github.com/Lyon-Ynov-Campus/groupie-tracker-lukas-quentin-alexis"],
     screenShot: ["./assets/projets_screenshot/groupie-tracker.png"],
   },
   {
