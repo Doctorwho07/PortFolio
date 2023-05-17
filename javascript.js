@@ -107,3 +107,17 @@ function openPDF() {
   link.click();
   document.body.removeChild(link);
 }
+
+function toggleNavbar() {
+  var navbar = document.getElementsByClassName("navbar")[0];
+  var icon = document.getElementsByClassName("icon")[0];
+
+  if (navbar.classList.contains("responsive")) {
+    navbar.classList.remove("responsive");
+    icon.classList.remove("active");
+  } else {
+    navbar.classList.add("responsive");
+    icon.classList.add("active");
+  }
+  navbar.classList.toggle("show");
+}

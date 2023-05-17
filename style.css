@@ -25,15 +25,6 @@ a {
   width: fit-content;
 }
 
-header {
-  background-color: #1f1f1f;
-  width: 100%;
-  position: fixed;
-  height: 7vh;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-  z-index: 100;
-}
 html {
   width: 100%;
   height: 100%;
@@ -52,12 +43,6 @@ footer {
   height: 5vh;
   width: 100%;
   background-color: #1f1f1f;
-}
-.navbar {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 .subtitlePortfolio {
   height: 100%;
@@ -307,4 +292,81 @@ button:hover {
   height: 30vh;
   object-fit: cover;
   border-radius: 25px;
+}
+
+header {
+  background-color: #1f1f1f;
+  width: 100%;
+  position: fixed;
+  height: 7vh;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  z-index: 100;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .raccourci {
+    top: 90vh;
+  }
+  .navbar a:not(:last-child) {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar.responsive a:hover {
+    background-color: #333; /* Couleur de fond au survol */
+  }
+  .navbar.responsive.show {
+    display: flex; /* Afficher la navbar en colonne lorsqu'elle est active */
+  }
 }
