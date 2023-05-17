@@ -1,35 +1,22 @@
+/* Réinitialisation des styles */
 * {
   padding: 0;
   margin: 0;
   color: #2979ff;
   letter-spacing: 1px;
-  --gold: rgb(115, 106, 35);
-  --red: rgb(93, 24, 18);
-  --orange: rgb(115, 79, 39);
-  --grey: rgb(122, 122, 122);
-  --purple: rgb(112, 79, 116);
-  --dark-blue: rgb(19, 19, 65);
-  --black: rgb(0, 0, 0);
-  --light-blue: rgb(76, 126, 125);
   text-decoration: none;
   font-family: sans-serif;
 }
-br {
-  background-color: white;
-  color: white;
-  height: 2px;
-}
-a {
-  margin: 0;
-  padding: 0;
-  width: fit-content;
-}
 
-html {
+/* Styles globaux */
+html,
+body {
   width: 100%;
   height: 100%;
+  background-color: #1f1f1fd2;
 }
 
+/* En-tête */
 header {
   background-color: #1f1f1f;
   width: 100%;
@@ -39,6 +26,7 @@ header {
   border-bottom: 1px solid;
   z-index: 100;
 }
+
 h3 {
   font-size: 28px;
   font-weight: bold;
@@ -46,11 +34,7 @@ h3 {
   padding: 0;
 }
 
-body {
-  background-color: #1f1f1fd2;
-  width: 100%;
-  height: 100%;
-}
+/* Pied de page */
 footer {
   display: flex;
   justify-content: center;
@@ -60,6 +44,8 @@ footer {
   width: 100%;
   background-color: #1f1f1f;
 }
+
+/* Classes */
 .subtitlePortfolio {
   height: 100%;
   margin: 1%;
@@ -98,11 +84,6 @@ footer {
   width: 100%;
 }
 
-#home {
-  height: 93vh;
-  padding-top: 7vh;
-}
-
 .background {
   background-image: url(./assets/home.png);
   width: 100%;
@@ -112,15 +93,18 @@ footer {
   opacity: 0.1;
   z-index: 0;
 }
+
 .title h1 {
   font-size: 48px;
   font-weight: bold;
   z-index: 1;
 }
+
 .subtitleHome {
   font-size: 24px;
   z-index: 2;
 }
+
 .title {
   display: flex;
   justify-content: center;
@@ -141,18 +125,27 @@ footer {
   border-radius: 5px;
 }
 
+#home {
+  height: 93vh;
+  padding-top: 7vh;
+}
+
 #competences {
   padding-top: 50px;
 }
+
 #portfolio {
   padding-top: 50px;
 }
+
 .separator {
   margin: 3%;
 }
+
 h3 {
   margin: 2%;
 }
+
 .card-container {
   width: 100%;
   height: 100%;
@@ -196,6 +189,7 @@ h3 {
   color: #ffffff;
   text-decoration: underline;
 }
+
 .modal.close p:hover {
   transition: 1s;
   color: #2979ff;
@@ -204,6 +198,7 @@ h3 {
 #modal-close {
   cursor: pointer;
 }
+
 .lien-details.projet {
   margin: 5%;
 }
@@ -217,18 +212,78 @@ h3 {
   height: 100%;
 }
 
-/* smartphone */
+/* Media Queries */
+
+/* Smartphone */
 @media screen and (max-width: 767px) {
+  .title h1 {
+    font-size: 40px;
+  }
+
+  #pdf {
+    width: 70vw;
+  }
+
+  .raccourci {
+    top: 90vh;
+  }
+
+  .navbar a:not(:last-child) {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    display: block;
+    text-align: left;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar.responsive a:hover {
+    background-color: #333;
+  }
+
+  .navbar.responsive.show {
+    display: flex;
+  }
 }
 
-/* tablet */
-@media screen and (min-width: 767px) and (max-width: 1023) {
+/* Tablette */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  /* Ajoutez ici les styles spécifiques aux tablettes */
 }
 
-/* desktop */
+/* Bureau */
 @media screen and (min-width: 1024px) {
+  /* Ajoutez ici les styles spécifiques aux écrans de bureau */
 }
 
+/* Styles spécifiques */
 #contact {
   margin: 5%;
 }
@@ -240,6 +295,7 @@ h3 {
 #apropos {
   padding-top: 50px;
 }
+
 #contact h2 {
   width: 100%;
   font-size: 28px;
@@ -272,6 +328,7 @@ h3 {
 .line {
   display: flex;
 }
+
 .line img {
   margin-right: 5%;
 }
@@ -295,6 +352,7 @@ button:hover {
   background-color: lightgray;
   color: #2979ff;
 }
+
 #pdf {
   margin: 2%;
   border-radius: 25px;
@@ -335,12 +393,15 @@ button:hover {
   .title h1 {
     font-size: 40px;
   }
+
   #pdf {
     width: 70vw;
   }
+
   .raccourci {
     top: 90vh;
   }
+
   .navbar a:not(:last-child) {
     display: none;
   }
@@ -376,11 +437,13 @@ button:hover {
     color: white;
     text-decoration: none;
   }
+
   .navbar.responsive a:hover {
-    background-color: #333; /* Couleur de fond au survol */
+    background-color: #333;
   }
+
   .navbar.responsive.show {
-    display: flex; /* Afficher la navbar en colonne lorsqu'elle est active */
+    display: flex;
   }
 }
 
