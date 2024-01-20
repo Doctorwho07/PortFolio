@@ -11,7 +11,7 @@ window.addEventListener("focus", () => {
 //------fonction card------//
 const data = Projet;
 const cardContainer = document.querySelector(".card-container");
-const urlImageDefaut = "./assets/visuel-a-venir.jpg";
+const urlImageDefaut = "./assets/projets_screenshot/vav.jpg";
 // Créer une carte pour chaque objet de données
 data.forEach((item) => {
   const card = document.createElement("div");
@@ -99,7 +99,7 @@ function afficheModalProjet(projet) {
 }
 
 function openPDF() {
-  var pdfURL = "./assets/CV_Alexis_ROUCHES.pdf";
+  var pdfURL = "./assets/CV-alexis-rouches-2024.pdf";
   window.open(pdfURL, "_blank");
   var link = document.createElement("a");
   link.href = pdfURL;
