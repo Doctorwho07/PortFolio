@@ -67,7 +67,7 @@ function afficheModalProjet(projet) {
 
   modalField.innerHTML =
     '<div class="modal-container ">' +
-    '<div class="modal description">' +
+    '<div class="modal-description">' +
     '<div class="text">' +
     "<h1>" +
     projet.nom +
@@ -78,11 +78,13 @@ function afficheModalProjet(projet) {
     "<p>" +
     projet.description +
     "</p>" +
-    '<button class="lien-details projet"  onclick="window.location.href=\'' +
+    '<button class="lien-details-projet"  onclick="window.location.href=\'' +
     projet.url +
     "'\">" +
+    "<p>" +
     "Voir le projet en détails" +
-    '<div class="modal photo">' +
+    "</p>" +
+    '<div class="modal-photo">' +
     '<img class="imgproj" src="' +
     projet.screenShot +
     '">' +
@@ -121,3 +123,27 @@ function toggleNavbar() {
   }
   navbar.classList.toggle("show");
 }
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const targetId = link.getAttribute("href");
+
+    if (targetId) {
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        const navbarHeight = document.querySelector("header").offsetHeight;
+        const targetOffset = targetSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+});
