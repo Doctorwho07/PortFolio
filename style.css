@@ -66,14 +66,18 @@ footer {
 }
 
 .raccourci {
-  background-color: #2978ff62;
   display: flex;
   position: absolute;
-  top: 8vh;
+  top: 0vh;
   left: 3vw;
   height: fit-content;
   width: fit-content;
-  border-radius: 25px;
+}
+.texte{
+  display: flex;
+  width: 50%;
+  margin-right: 2vw;
+  justify-content: space-between;
 }
 
 .logoracc {
@@ -160,19 +164,12 @@ footer {
   padding-top: 7vh;
 }
 
-#competences {
-  padding-top: 5vh;
-}
-
 .row {
   display: flex;
 }
-
-#portfolio {
-  margin-top: 15vh;
-  padding-top: 50px;
+#competences {
+  height: 100vh;
 }
-
 .separator {
   margin: 3%;
 }
@@ -391,7 +388,7 @@ button:hover {
 .navbar {
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
