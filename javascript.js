@@ -11,7 +11,7 @@ window.addEventListener("focus", () => {
 //------fonction card------//
 const data = Projet;
 const cardContainer = document.querySelector(".card-container");
-const urlImageDefaut = "./assets/visuel-a-venir.jpg";
+const urlImageDefaut = "./assets/projets_screenshot/vav.jpg";
 // Créer une carte pour chaque objet de données
 data.forEach((item) => {
   const card = document.createElement("div");
@@ -67,7 +67,7 @@ function afficheModalProjet(projet) {
 
   modalField.innerHTML =
     '<div class="modal-container ">' +
-    '<div class="modal description">' +
+    '<div class="modal-description">' +
     '<div class="text">' +
     "<h1>" +
     projet.nom +
@@ -78,11 +78,13 @@ function afficheModalProjet(projet) {
     "<p>" +
     projet.description +
     "</p>" +
-    '<button class="lien-details projet"  onclick="window.location.href=\'' +
+    '<button class="lien-details-projet"  onclick="window.location.href=\'' +
     projet.url +
     "'\">" +
+    "<p>" +
     "Voir le projet en détails" +
-    '<div class="modal photo">' +
+    "</p>" +
+    '<div class="modal-photo">' +
     '<img class="imgproj" src="' +
     projet.screenShot +
     '">' +
@@ -97,7 +99,7 @@ function afficheModalProjet(projet) {
 }
 
 function openPDF() {
-  var pdfURL = "./assets/CV_Alexis_ROUCHES.pdf";
+  var pdfURL = "./assets/CV-alexis-rouches-2024.pdf";
   window.open(pdfURL, "_blank");
   var link = document.createElement("a");
   link.href = pdfURL;
@@ -121,3 +123,27 @@ function toggleNavbar() {
   }
   navbar.classList.toggle("show");
 }
+
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const targetId = link.getAttribute("href");
+
+    if (targetId) {
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        const navbarHeight = document.querySelector("header").offsetHeight;
+        const targetOffset = targetSection.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+});
